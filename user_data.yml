@@ -1,0 +1,12 @@
+#cloud-config
+yum_update: true
+packages:
+ - docker.io
+ - docker-ce
+users:
+ - default
+ - name: nicolas
+   sudo: ALL=(ALL) NOPASSWD:ALL
+   ssh_authorized_keys:
+    - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCoq8WNSHOD91S3WVxGt0K/Yj9MJLu0IU0FHeN0FHn7z/awoDe9d7/qsGjxdwtACNgcL+Yy//CO+n2O0vRSnCJE2lom40QgWJJVNd8taWatZ/Gua6ZksZww2O5K3wKtE+mvHVwBJ4VUWZ8hbImmYfuRD9tnV57xlebssazdN70Ukvags5iUNDOPrCq4/NL0/6x4bf7BcF7C+90g4XStjWrkEk7TGfsUPQtGylxTSklZsQ4s35OmeF4pBIrvIOQ0izaxV3bqvtYG4q1/a7LTy/E9K7OeSEXJYJJPvUxHgfWjfMoU0YqiyVMzKSWgwL6O/9Ui5vqpMkc4gzWz7uY42NJr raulcortes@MacBook-Pro-de-raul.local
+ 

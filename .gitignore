@@ -1,0 +1,4 @@
+*.vscode
+id_rsa.pub
+*.tfstate*
+.terraform
